@@ -1,0 +1,351 @@
+# ============================================
+# AI-EOS Complete .gitignore
+# ============================================
+
+# ============================================
+# CRITICAL - NEVER COMMIT THESE
+# ============================================
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.p12
+secrets/
+.secrets/
+
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+PIPFILE.lock
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+.pyenv
+.python-version
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+pytest_debug.log
+coverage.xml
+*.cover
+.cache
+nosetests.xml
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+
+# ============================================
+# AI/ML Specific
+# ============================================
+
+# LangSmith local cache
+.langsmith/
+langsmith_cache/
+
+# Letta data
+.letta/
+letta_data/
+letta.db
+letta_*.db
+
+# Model weights (if downloading)
+models/
+weights/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pb
+*.onnx
+
+# Vector databases
+chroma_db/
+.chroma/
+faiss_index/
+.faiss/
+
+# Embeddings cache
+embeddings_cache/
+.embeddings/
+
+# LangGraph cache
+.langgraph/
+langgraph_cache/
+
+# Traces (if saved locally)
+traces/
+.traces/
+
+
+# ============================================
+# Databases
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+postgres_data/
+redis_data/
+.pgdata/
+.redisdata/
+
+
+# ============================================
+# IDEs
+# ============================================
+
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+notebooks/.ipynb_checkpoints/
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+
+# ============================================
+# OS
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+.Trash-*/
+
+
+# ============================================
+# Logs
+# ============================================
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+
+# ============================================
+# Temporary Files
+# ============================================
+tmp/
+temp/
+.tmp/
+.temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+
+# ============================================
+# Documentation Build
+# ============================================
+docs/_build/
+site/
+.mkdocs/
+
+
+# ============================================
+# Testing
+# ============================================
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+test-results/
+test_outputs/
+*.xml
+
+
+# ============================================
+# Dependencies
+# ============================================
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+
+# ============================================
+# Build Outputs
+# ============================================
+dist/
+build/
+*.egg-info/
+.next/
+out/
+.vercel/
+.netlify/
+
+
+# ============================================
+# Data (exclude large datasets)
+# ============================================
+data/raw/
+data/processed/
+*.csv
+*.parquet
+*.arrow
+*.feather
+
+# But keep data structure
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+
+# ============================================
+# Monitoring
+# ============================================
+.monitoring/
+metrics/
+tracing/
+
+
+# ============================================
+# Local Configuration
+# ============================================
+config.local.yaml
+config.local.json
+config.local.toml
+*.local.conf
+
+
+# ============================================
+# Docker
+# ============================================
+.dockerignore
+docker-compose.override.yml
+
+
+# ============================================
+# Project Specific
+# ============================================
+
+# User uploads (if any)
+uploads/
+static/uploads/
+
+# Generated reports
+reports/
+*.pdf
+*.html
+
+# Cached API responses
+cache/
+.cache/
+
+# Experiment tracking
+experiments/
+runs/
+mlruns/
+
+# Deployment artifacts
+deployment/
+.railway/
+
+
+# ============================================
+# EXCEPTIONS (DO COMMIT THESE)
+# ============================================
+
+# Keep example files
+!.env.example
+!config.example.yaml
+!docker-compose.example.yml
+
+# Keep .gitkeep for empty directories
+!.gitkeep
+
+# Keep requirements
+!requirements*.txt
+
+# Keep important docs
+!README.md
+!CHANGELOG.md
+!LICENSE
+
+# Keep GitHub workflows
+!.github/
+
+# ============================================
+# END
+# ============================================

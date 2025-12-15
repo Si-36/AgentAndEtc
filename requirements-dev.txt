@@ -1,0 +1,336 @@
+# ============================================
+# AI-EOS Complete Dependencies
+# Exact versions from ULTIMATE_COMPLETE_PLAN_FINAL.md
+# Last updated: December 16, 2025
+# ============================================
+
+
+# ============================================
+# CORE FRAMEWORK (Required for Week 1)
+# ============================================
+
+# LangGraph - Multi-agent orchestration
+langgraph==0.2.53
+langgraph-checkpoint-postgres==0.0.8
+langgraph-cli==0.1.45
+
+# LangChain - Foundation
+langchain==0.3.15
+langchain-core==0.3.32
+langchain-community==0.3.13
+
+# LangSmith - Observability (CRITICAL)
+langsmith==0.2.11
+
+
+# ============================================
+# LLM PROVIDERS
+# ============================================
+
+# OpenAI (GPT models + embeddings)
+langchain-openai==0.2.14
+openai==1.58.1
+tiktoken==0.8.0
+
+# Google Gemini (FREE tier primary)
+langchain-google-genai==2.0.7
+google-generativeai==0.8.3
+
+# Anthropic Claude (Premium arbiter)
+langchain-anthropic==0.3.10
+anthropic==0.39.0
+
+# Optional: Cohere (for reranking)
+langchain-cohere==0.3.5
+cohere==5.15.0
+
+
+# ============================================
+# MEMORY SYSTEM (Week 1)
+# ============================================
+
+# Letta - Self-editing memory
+letta==0.6.4
+letta-client==0.6.4
+
+# Vector embeddings
+sentence-transformers==3.3.1
+transformers==4.46.3
+torch==2.5.1
+
+
+# ============================================
+# TOOLS & INTEGRATIONS (Week 3+)
+# ============================================
+
+# Web search
+tavily-python==0.5.0
+
+# Optional: Alternative search
+# exa-py==1.0.0  # Uncomment if using Exa
+
+# Date handling (Persian/Jalali)
+jdatetime==5.0.0
+persiantools==4.2.0
+
+# HTTP requests
+requests==2.32.3
+httpx==0.27.2
+aiohttp==3.11.7
+
+
+# ============================================
+# DATABASES (Week 7)
+# ============================================
+
+# PostgreSQL + pgvector
+psycopg[binary,pool]==3.2.3
+pgvector==0.3.6
+sqlalchemy==2.0.36
+alembic==1.14.0
+
+# Redis
+redis==5.2.0
+hiredis==3.0.0
+
+
+# ============================================
+# TESTING (Week 1+)
+# ============================================
+
+# PyTest framework
+pytest==8.3.4
+pytest-asyncio==0.24.0
+pytest-cov==6.0.0
+pytest-mock==3.14.0
+pytest-timeout==2.3.1
+pytest-xdist==3.6.1  # Parallel testing
+
+# Property-based testing
+hypothesis==6.122.3
+
+# Test utilities
+faker==33.1.0
+factory-boy==3.3.1
+
+
+# ============================================
+# UTILITIES
+# ============================================
+
+# Environment variables
+python-dotenv==1.0.1
+
+# CLI
+typer==0.15.1
+click==8.1.8
+
+# Rich text output
+rich==13.9.4
+
+# Progress bars
+tqdm==4.67.1
+
+# JSON handling
+orjson==3.10.12
+
+# YAML
+PyYAML==6.0.2
+
+# Logging
+loguru==0.7.3
+
+# Async utilities
+anyio==4.7.0
+
+
+# ============================================
+# DATA PROCESSING
+# ============================================
+
+# Pandas (if needed for data analysis)
+pandas==2.2.3
+numpy==2.2.1
+
+# JSON schema validation
+jsonschema==4.23.0
+pydantic==2.10.3
+pydantic-settings==2.6.1
+
+
+# ============================================
+# WEB FRAMEWORK (Week 8+)
+# ============================================
+
+# FastAPI
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+starlette==0.41.3
+
+# WebSockets
+websockets==14.1
+
+# CORS
+fastapi-cors==0.0.6
+
+# Rate limiting
+slowapi==0.1.9
+
+
+# ============================================
+# MONITORING & OBSERVABILITY (Week 7+)
+# ============================================
+
+# Prometheus metrics
+prometheus-client==0.21.0
+
+# OpenTelemetry (optional)
+# opentelemetry-api==1.28.2
+# opentelemetry-sdk==1.28.2
+
+# Sentry (optional)
+# sentry-sdk==2.19.2
+
+
+# ============================================
+# SECURITY (Week 7+)
+# ============================================
+
+# Password hashing
+bcrypt==4.2.1
+passlib==1.7.4
+
+# JWT
+PyJWT==2.10.1
+python-jose[cryptography]==3.3.0
+
+# Secrets management
+cryptography==44.0.0
+
+
+# ============================================
+# FILE HANDLING
+# ============================================
+
+# PDF
+PyPDF2==3.0.1
+pdfplumber==0.11.4
+
+# Excel
+openpyxl==3.1.5
+
+# Images
+Pillow==11.0.0
+
+# OCR (optional)
+# pytesseract==0.3.13
+
+
+# ============================================
+# CODE QUALITY (Development)
+# ============================================
+
+# Linting
+ruff==0.8.4
+black==24.10.0
+isort==5.13.2
+
+# Type checking
+mypy==1.13.0
+
+# Pre-commit hooks
+pre-commit==4.0.1
+
+
+# ============================================
+# DOCUMENTATION (Optional)
+# ============================================
+
+# MkDocs
+# mkdocs==1.6.1
+# mkdocs-material==9.5.47
+# mkdocstrings[python]==0.27.0
+
+
+# ============================================
+# DEPLOYMENT (Week 10+)
+# ============================================
+
+# Gunicorn (production server)
+gunicorn==23.0.0
+
+# Docker Python client (optional)
+# docker==7.1.0
+
+
+# ============================================
+# ANALYTICS (Optional)
+# ============================================
+
+# PostHog
+# posthog==3.7.4
+
+# Mixpanel
+# mixpanel==4.10.1
+
+
+# ============================================
+# PERSIAN SUPPORT
+# ============================================
+
+# Persian text processing
+hazm==0.10.0
+
+# Persian date
+jdatetime==5.0.0
+persiantools==4.2.0
+
+# Arabic script handling
+arabic-reshaper==3.0.0
+python-bidi==0.4.2
+
+
+# ============================================
+# PERFORMANCE
+# ============================================
+
+# Faster JSON
+orjson==3.10.12
+
+# Faster YAML
+ruamel.yaml==0.18.6
+
+# Memory profiling (optional)
+# memory-profiler==0.61.0
+# psutil==6.1.1
+
+
+# ============================================
+# NOTES
+# ============================================
+#
+# Installation priority:
+# 1. Core framework (langgraph, langchain, langsmith)
+# 2. At least one LLM provider (openai OR google)
+# 3. Letta for memory
+# 4. Testing tools (pytest)
+# 5. Utilities (rich, typer, python-dotenv)
+# 6. Everything else as needed
+#
+# Install all:
+#   pip install -r requirements-dev.txt
+#
+# Install minimal (Week 1 only):
+#   pip install langgraph langsmith langchain-openai letta pytest python-dotenv rich
+#
+# Install for production (no dev tools):
+#   grep -v "^#" requirements-dev.txt | grep -v "ruff\|black\|mypy\|pre-commit" > requirements.txt
+#   pip install -r requirements.txt
+#
+# Update all packages:
+#   pip install --upgrade -r requirements-dev.txt
+#
+# Check outdated:
+#   pip list --outdated
+#
+# ============================================
