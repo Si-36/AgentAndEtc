@@ -387,3 +387,589 @@ Week 4 Gate:
 
 ---
 
+## 2. SEO/AEO/GEO TRIPLE GROWTH ENGINE ⭐⭐⭐
+
+### **What It Is**
+Three-layer optimization for maximum discoverability: Traditional Search + Answer Engines + Generative Engines.
+
+### **Why It Matters**
+- **SEO**: Everyone knows (table stakes, must have)
+- **AEO**: Few people know (competitive edge today)
+- **GEO**: Almost nobody knows (2-3 years ahead of market)
+- **Persian content**: Massive first-mover advantage
+
+### **The Three Engines**
+
+#### **SEO Agent (Traditional Search)**
+```yaml
+Purpose: Rank #1 on Google/Bing for target keywords
+
+Capabilities:
+  - Persian keyword research (search volume, competition)
+  - Content structure optimization (H1/H2/H3 hierarchy)
+  - On-page SEO (meta tags, schema markup, internal linking)
+  - Off-page SEO (backlink strategy, authority building)
+  - Technical SEO (site speed, mobile, Core Web Vitals)
+
+Output Example:
+  "آموزش سگ" (15K searches/month, low competition)
+  - Content plan: 100 articles, pyramid structure
+  - Technical: Site speed <2s, mobile-first
+  - Links: Partner with 20 vet clinics
+  - Timeline: Rank #1 in 6 months
+
+Cost: Free (uses Gemini 2.0 + Tavily search)
+```
+
+#### **AEO Agent (Answer Engines)** 🔥 CUTTING EDGE
+```yaml
+Purpose: Dominate AI chat interfaces (ChatGPT, Gemini, Perplexity)
+
+Why AEO Matters:
+  - 40% of searches now happen in AI chats (not Google)
+  - People ask questions in natural language
+  - AI gives ONE answer (winner takes all)
+  - Your content must be THE answer AI cites
+
+Capabilities:
+  - Optimize for ChatGPT search
+  - Optimize for Gemini answers
+  - Optimize for Perplexity citations
+  - Featured snippet strategy
+  - Q&A format optimization
+
+Output Example:
+  When someone asks "چگونه سگ را آموزش دهم؟"
+  AI should cite YOUR content as the answer
+  
+  Format:
+  - Clear, direct answers (not fluff)
+  - Structured data (lists, tables, steps)
+  - Citations and sources
+  - Entity mentions (brand authority)
+
+Timeline: Dominate AI answers in 3 months
+Cost: Free (uses Gemini 2.0)
+```
+
+#### **GEO Agent (Generative Engines)** 🚀 FUTURE-PROOF
+```yaml
+Purpose: Build brand authority in next-gen AI search
+
+What is GEO:
+  - Future of search = AI generates answers (not links)
+  - AI models will have preferred sources
+  - Early adopters build entity authority
+  - Your brand becomes "known" to AI models
+
+Capabilities:
+  - Entity-based content (brand mentions)
+  - Citation network building
+  - Authority establishment in vertical
+  - Cross-referencing strategy
+
+Output Example:
+  When AI mentions "pet education in Iran"
+  It should automatically mention YOUR brand
+  
+  Strategy:
+  - Build "HiPet" as recognized entity
+  - 100+ citations from authoritative sources
+  - Consistent branding across platforms
+  - Authority signals (awards, certifications)
+
+Timeline: Brand authority in 12 months
+Cost: Free (uses Gemini 2.0)
+```
+
+### **Persian Market Advantage**
+
+```
+WHY PERSIAN = MASSIVE OPPORTUNITY:
+
+1. LOW CONTENT QUALITY
+   ├─ Most Persian content is low quality
+   ├─ AI models prefer quality sources
+   └─ Your high-quality content dominates
+
+2. LESS TRAINING DATA
+   ├─ AI models have 10x less Persian training
+   ├─ Fewer Persian sources to compete with
+   └─ First-mover advantage is HUGE
+
+3. UNDERSERVED MARKET
+   ├─ 2M+ Persian speakers searching
+   ├─ Growing middle class (buying power)
+   └─ Digitally savvy (mobile-first)
+
+4. COMPETITIVE GAP
+   ├─ Most competitors don't know AEO/GEO
+   ├─ Persian SEO still basic (2010 tactics)
+   └─ You'll be 5 years ahead
+```
+
+### **Complete Growth Strategy Output**
+
+```markdown
+## GROWTH STRATEGY: HiPet (Example)
+
+### SEO STRATEGY (Traditional)
+- Primary: "آموزش سگ" (15K/month, low competition)
+- Secondary: "رفتار گربه" (8K/month)
+- Long-tail: 50+ keywords (200-500 searches each)
+- Content: 100 articles, published 3/week
+- Technical: Site speed <2s, Core Web Vitals green
+- Links: 20 vet partnerships, 5 media mentions
+- Timeline: Rank #1 in 6 months
+- Traffic: 10K visitors/month (Year 1)
+
+### AEO STRATEGY (Answer Engines) 🔥
+- Target: ChatGPT, Gemini, Perplexity
+- Format: Q&A structure, clear answers, citations
+- Coverage: 200+ common questions answered
+- Update: Weekly (stay current)
+- Timeline: Dominate AI answers in 3 months
+- Traffic: 5K visitors/month from AI referrals (Year 1)
+
+### GEO STRATEGY (Generative Engines) 🚀
+- Goal: "HiPet" recognized by AI models
+- Tactics: 100+ authoritative citations
+- Branding: Consistent across 10+ platforms
+- Authority: Expert positioning (vet partnerships)
+- Timeline: Brand authority in 12 months
+- Result: 100+ brand mentions in AI answers
+
+### TOTAL IMPACT
+- Year 1: 15K visitors/month (10K SEO + 5K AEO)
+- Year 2: 35K visitors/month (growth compounds)
+- Year 3: 75K visitors/month (market leader)
+- Conversion: 2% → 1,500 customers/month (Year 3)
+```
+
+### **Success Metrics**
+
+Week 8 Gate:
+- [ ] SEO strategy generated for 3 test verticals
+- [ ] AEO optimization working (tested with ChatGPT/Gemini)
+- [ ] GEO framework implemented (entity building)
+- [ ] Persian content quality validator passing >90%
+
+---
+
+## 3. SELF-EDITING MEMORY SYSTEM ⭐⭐
+
+### **What It Is**
+Memory system that learns from feedback and proposes its own updates. Gets smarter automatically.
+
+### **Why It Matters**
+- **Continuous improvement**: No manual memory updates needed
+- **Learns from failures**: Remembers what NOT to do
+- **Pattern recognition**: Identifies recurring themes
+- **20% accuracy gain** after 100 feedbacks (measured)
+
+### **Architecture** (Letta 3-Tier Memory)
+
+```yaml
+1. CORE MEMORY (2KB, always loaded):
+   Purpose: Agent persona, constraints, recent learnings
+   
+   Example (Analyst Agent):
+     persona: "تحلیلگر منطقی. همیشه شواهد می‌خواهم."
+     constraints:
+       - "Always cite sources [1][2]"
+       - "Quantify with numbers"
+       - "Explicit confidence scores"
+     recent_feedback:
+       - "User prefers conservative estimates"
+       - "Don't use technical jargon"
+       - "Always explain assumptions"
+
+2. CONVERSATIONAL MEMORY (10KB, last 10 debates):
+   Purpose: Recent debates, patterns, accuracy tracking
+   
+   Example:
+     - Debate: "باید 5 نفر استخدام کنم یا 10؟"
+       My answer: "5 نفر - کنترل بیشتر"
+       R2 change: "Changed to 7 after Strategist point"
+       User choice: "Picked 7 (my R2)"
+       Outcome: "Success - good decision"
+       Learning: "User prefers gradual scaling"
+
+3. ARCHIVAL MEMORY (Unlimited, pgvector):
+   Purpose: All past debates, searchable, pattern mining
+   
+   Schema:
+     - debate_id, date, query_text, query_embedding
+     - agent_responses, user_choice, outcome
+     - feedback, tags, success_rate
+   
+   Search:
+     - Semantic search ("similar debates")
+     - Success rate tracking per topic
+     - Pattern recognition ("when X, user picks Y")
+```
+
+### **Self-Editing Protocol**
+
+```
+TRIGGER CONDITIONS:
+1. After 3 similar questions with same answer
+2. Contradiction detected between memory and new info
+3. User explicitly corrects agent
+4. Pattern detected (success rate <60% on topic)
+5. Agent confidence low but user validates answer
+
+PROCESS:
+1. Agent proposes memory update
+   Example: "3 people asked about new pricing.
+            Current memory says $10/month.
+            All 3 said it's now $15/month.
+            PROPOSAL: Update pricing to $15/month"
+
+2. Validation layer checks proposal
+   ├─ Is this contradicting other memories?
+   ├─ How many data points support this?
+   ├─ What's the source credibility?
+   └─ Risk if wrong?
+
+3. Human approves/rejects
+   (Auto-approve if confidence >95% and low risk)
+
+4. Memory updated + logged
+   ├─ What changed
+   ├─ Why it changed
+   ├─ When it changed
+   └─ Success rate tracking starts
+
+5. Measure impact
+   ├─ Accuracy before vs after
+   ├─ User satisfaction delta
+   └─ Learning velocity
+```
+
+### **Contradiction Detection**
+
+```
+EXAMPLE:
+Marketing memory: "Product launches Q1 2026"
+Product memory: "Launch delayed to Q2 2026"
+
+DETECTION:
+1. Agent finds conflicting info during debate
+2. Flags contradiction to supervisor
+3. Supervisor escalates to relevant humans
+   "@marketing @product - conflict detected"
+4. Humans resolve
+5. Memory updated with resolution
+6. Learning logged: "Launch dates changed"
+```
+
+### **Pattern Recognition**
+
+```
+AFTER 100 DEBATES:
+
+Agent identifies patterns:
+├─ "When budget discussed, user picks conservative"
+├─ "Hiring decisions: user prefers 2-phase approach"
+├─ "Technical questions: user wants detailed breakdown"
+└─ "Strategic decisions: user values risk analysis"
+
+Agent proposes persona updates:
+├─ "Should I default to conservative estimates?"
+├─ "Should I always suggest phased approaches?"
+└─ "Should I increase detail level on technical topics?"
+
+Human reviews and approves
+Agent updates core memory
+Accuracy improves by 15-20%
+```
+
+### **Success Metrics**
+
+Week 8 Gate:
+- [ ] Self-editing working (5+ successful updates)
+- [ ] Contradiction detection catching conflicts
+- [ ] Pattern recognition identifying 3+ patterns
+- [ ] Accuracy improvement >10% after 50 feedbacks
+
+---
+
+## 4. RESEARCH ENGINE (4 Parallel Agents) ⭐⭐
+
+### **What It Is**
+Four specialized research agents that run in parallel. Complete research report in 30 seconds.
+
+### **Why It Matters**
+- **Speed**: 30 seconds vs 2 hours manual research
+- **Comprehensive**: 4 perspectives covered
+- **Always current**: Web search integration
+- **Actionable**: Generates specific recommendations
+
+### **The 4 Research Agents**
+
+```yaml
+1. SEO RESEARCH AGENT:
+   Input: Topic (e.g., "pet education Iran")
+   Output:
+     - Keywords: Volume, competition, opportunity score
+     - Content gaps: What's missing in market
+     - Ranking difficulty: Easy/Medium/Hard
+     - Traffic potential: Realistic projections
+   Time: 30 seconds
+   Cost: $0.001 (Gemini + Tavily)
+
+2. MARKET RESEARCH AGENT:
+   Input: Topic + Geography
+   Output:
+     - TAM/SAM/SOM calculations
+     - Demographics (age, income, behavior)
+     - Market trends (growth rate, shifts)
+     - Competitive landscape (# players, saturation)
+   Time: 30 seconds
+   Cost: $0.001
+
+3. FINANCIAL RESEARCH AGENT:
+   Input: Business model assumptions
+   Output:
+     - Revenue projections (3 scenarios)
+     - Cost structure breakdown
+     - Break-even analysis
+     - ROI calculations (1/3/5 year)
+   Time: 30 seconds
+   Cost: $0.001
+
+4. COMPETITOR RESEARCH AGENT:
+   Input: Topic + Geography
+   Output:
+     - Direct competitors (list + analysis)
+     - Indirect competitors (substitutes)
+     - SWOT analysis (yours vs theirs)
+     - Positioning opportunities (gaps)
+   Time: 30 seconds
+   Cost: $0.001
+```
+
+### **Research Orchestrator**
+
+```python
+# All 4 agents run in PARALLEL (not sequential)
+async def research_report(topic, geography):
+    results = await asyncio.gather(
+        seo_research(topic),
+        market_research(topic, geography),
+        financial_research(topic),
+        competitor_research(topic, geography)
+    )
+    
+    return synthesize_report(results)
+    # Total time: 30 seconds (not 120 seconds)
+```
+
+### **Example Output**
+
+```markdown
+## COMPLETE RESEARCH REPORT: HiPet Launch Decision
+
+### SEO ANALYSIS
+- Primary keyword: "آموزش سگ" (15,000 searches/month)
+- Competition: LOW (almost no quality Persian content)
+- Opportunity score: 9/10 ⭐
+- Content gap: Dog training, cat behavior, pet nutrition
+- Ranking difficulty: EASY (3-6 months to #1)
+
+### MARKET ANALYSIS
+- TAM: 2M pet owners in Tehran
+- SAM: 500K active information seekers
+- SOM: 50K early adopters (realistic first year)
+- Growth: 15% annually
+- Demographics: Ages 25-40, middle to upper class
+
+### FINANCIAL ANALYSIS
+- Monthly price: $10 (200,000 IRR)
+- Fixed costs: $3,000/month
+- Variable costs: $2/customer
+- Break-even: 300 customers (Month 3)
+- Year 1 revenue: $60,000 (500 customers avg)
+- Year 3 revenue: $300,000 (2,500 customers)
+- ROI: 10x in 3 years
+
+### COMPETITOR ANALYSIS
+- Direct competitors: 0 (none in Persian)
+- Indirect: 3 YouTube channels (low quality, free)
+- Positioning: First professional Persian pet education
+- Pricing: Can charge premium (no competition)
+- SWOT: Strong first-mover, weak in brand awareness
+
+### SYNTHESIS
+This is a HIGH-OPPORTUNITY market:
+✅ Low competition (almost none)
+✅ High demand (15K monthly searches)
+✅ Clear monetization ($10/month subscription)
+✅ Fast ROI (break-even Month 3)
+✅ Strong growth potential (15% annually)
+
+⚠️ RISKS:
+- Building brand from zero (6-12 months)
+- Content production costs (need 100+ articles)
+- Customer acquisition cost unknown (test needed)
+
+### RECOMMENDATION
+🟢 STRONG LAUNCH SIGNAL
+
+Plan A: Launch with $10/month, 100 customers Year 1
+Plan B: If low conversion, try $5/month or freemium
+Plan C: If very successful, expand to other cities
+
+Next Steps:
+1. Validate pricing (survey 50 pet owners)
+2. Create MVP (10 core articles)
+3. Test acquisition (run $500 ad campaign)
+4. Measure conversion (target >2%)
+```
+
+### **Success Metrics**
+
+Week 5 Gate:
+- [ ] Research engine generates complete report in <30s
+- [ ] All 4 agents providing quality insights
+- [ ] Report actionable (clear recommendations)
+- [ ] Integrated with Group Advisory Agent
+
+---
+
+## 5. VERTICAL TEMPLATE FRAMEWORK ⭐⭐
+
+### **What It Is**
+Repeatable template system. Build once (HiPet), deploy to any vertical in 4 weeks.
+
+### **Why It Matters**
+- **Scalability**: 1 codebase → 10+ verticals
+- **Speed**: 4 weeks per vertical (not 12 weeks)
+- **Proven**: HiPet validates the model
+- **Revenue**: $10K/vertical setup fee
+
+### **Template Components**
+
+```yaml
+1. VERTICAL-SPECIFIC CUSTOMIZATION:
+   ├─ Domain knowledge base (pet health, legal, fitness, etc.)
+   ├─ Industry terminology (vet terms, legal jargon)
+   ├─ Regulatory requirements (HIPAA, GDPR, etc.)
+   ├─ Target audience personas (pet owners, lawyers, etc.)
+   └─ Success metrics per vertical
+
+2. CORE PLATFORM (SAME FOR ALL):
+   ├─ Group Advisory Agent (debate system)
+   ├─ Self-Editing Memory
+   ├─ Research Engine
+   ├─ SEO/AEO/GEO Growth Engine
+   └─ Persian language support
+
+3. VERTICAL DEPLOYMENT PROCESS:
+   Week 1: Knowledge base creation (100 core facts)
+   Week 2: Terminology + agent training
+   Week 3: Research agents customization
+   Week 4: Testing + launch (10 pilot users)
+```
+
+### **HiPet Template (Example)**
+
+```yaml
+VERTICAL: Pet Health Education (HiPet)
+
+KNOWLEDGE BASE:
+  - 200+ pet health articles
+  - 50+ training guides
+  - 30+ nutrition plans
+  - Vet partnerships (trusted sources)
+
+TERMINOLOGY:
+  - Dog breeds (150+ Persian names)
+  - Health conditions (200+ terms)
+  - Training commands (100+ phrases)
+  - Nutrition terms (50+ ingredients)
+
+REGULATORY: None (education, not medical advice)
+
+AUDIENCE:
+  - Ages 25-40
+  - Middle to upper class
+  - Tehran-based (expanding)
+  - Tech-savvy, mobile-first
+
+SUCCESS METRICS:
+  - Monthly active users: 1,000 (Year 1)
+  - Subscription revenue: $10K/month
+  - Content engagement: 5 min avg
+  - Retention: >60% Month 2
+```
+
+### **Vertical Expansion Roadmap**
+
+```
+YEAR 1 (Prove Model):
+Q1: HiPet (Pet Health) - LAUNCH
+Q2: Legal Consultation (Lawyers)
+Q3: Fitness & Nutrition (Health coaches)
+Q4: Real Estate (Property advisors)
+
+YEAR 2 (Scale):
+├─ 8 more verticals
+├─ Total: 12 verticals live
+├─ Revenue: $120K/month (avg $10K/vertical)
+└─ Team: Hire 2 vertical specialists
+
+YEAR 3 (Platform Play):
+├─ Self-service platform (customers deploy own verticals)
+├─ Marketplace (connect buyers and sellers)
+├─ White-label offering ($50K/enterprise)
+└─ Revenue: $500K/month
+```
+
+### **Success Metrics**
+
+Week 12 Gate:
+- [ ] HiPet template proven (500+ users, $5K/month revenue)
+- [ ] Template framework working (deploy Legal vertical in 4 weeks)
+- [ ] Documentation complete (any vertical can be deployed)
+- [ ] Clear differentiation (better than competitors by 20%+)
+
+---
+
+# SHOULD BUILD (High Value, After Core)
+
+## **Content Factory** ⭐⭐
+- Auto-generate SEO-optimized articles (10x faster)
+- Persian language quality checks
+- Multi-format (blog, social, email)
+- Build after SEO/AEO/GEO working
+
+## **Master Brain Router** ⭐
+- Intelligent query routing (simple → fast, complex → debate)
+- Pattern learning (optimize over time)
+- Build after Group Advisory proven
+
+---
+
+# NICE TO HAVE (Build Later)
+
+## Voice/Phone Integration
+- Only if customer explicitly requests
+- High maintenance cost
+- Focus on text-first
+
+## Personal Management Tools
+- Calendar, tasks, notes
+- Saturated market
+- Low differentiation
+
+## Business Management Modules
+- CEO Assistant, PM tools, HR automation
+- Build after core proven
+- Enterprise upsell opportunity
+
+---
+
+**(To be continued in STEP 3: Complete Architecture, Implementation Plan, and Next Steps)**
+
