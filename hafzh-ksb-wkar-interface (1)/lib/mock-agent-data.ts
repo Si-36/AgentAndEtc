@@ -1,0 +1,386 @@
+import type {
+  AgentInstance,
+  MemoryBlock,
+  WorkingMemory,
+  ArchivalResult,
+  Chat,
+  AgentPrompt,
+  SystemSettings,
+} from "@/types/agent"
+
+export const mockAgents: AgentInstance[] = [
+  {
+    id: "analyst",
+    name: "تحلیلگر",
+    nameEn: "Analyst",
+    model: "GPT-4o",
+    icon: "📊",
+    color: "text-blue-400",
+    bgColor: "bg-blue-500/10",
+    borderColor: "border-blue-500/30",
+    status: "tool_calling",
+    startTime: Date.now() - 3200,
+    elapsed: "۳.۲s",
+    confidence: 85,
+    thoughts: [
+      {
+        id: "1",
+        timestamp: Date.now() - 3200,
+        elapsed: "۰.۱s",
+        type: "received",
+        icon: "📥",
+        content: "پیام کاربر دریافت شد",
+      },
+      {
+        id: "2",
+        timestamp: Date.now() - 3000,
+        elapsed: "۰.۲s",
+        type: "memory_load",
+        icon: "🧠",
+        content: "بارگذاری بلوک‌های حافظه اصلی...",
+        details: [
+          '→ persona: "علی، مدیرعامل تهران‌تک"',
+          '→ company: "۱۵ کارمند، تجارت الکترونیک"',
+          '→ priorities: "توسعه بین‌المللی"',
+        ],
+        expandable: true,
+        expanded: true,
+      },
+      {
+        id: "3",
+        timestamp: Date.now() - 2500,
+        elapsed: "۰.۵s",
+        type: "memory_search",
+        icon: "🔍",
+        content: "جستجو در حافظه آرشیوی...",
+        details: ['Query: "Dubai expansion + past decisions"', "→ ۳ خاطره مرتبط یافت شد"],
+        expandable: true,
+      },
+      {
+        id: "4",
+        timestamp: Date.now() - 1800,
+        elapsed: "۱.۲s",
+        type: "thinking",
+        icon: "💭",
+        content: "مونولوگ درونی:",
+        details: [
+          '"کاربر درباره توسعه دبی سوال کرده. یادم هست که',
+          "۶ ماه پیش این را بحث کردیم و ۲ مشتری موفق داشتیم.",
+          "این یک تصمیم استراتژیک مهم است.",
+          'باید داده‌های فعلی بازار را جمع‌آوری کنم."',
+        ],
+        expandable: true,
+        expanded: true,
+      },
+      {
+        id: "5",
+        timestamp: Date.now() - 1200,
+        elapsed: "۱.۸s",
+        type: "tool_call",
+        icon: "🔧",
+        content: "فراخوانی ابزار: web_search",
+        toolName: "web_search",
+        toolQuery: "Dubai e-commerce market growth 2025",
+        toolStatus: "executing",
+        expandable: true,
+        expanded: true,
+      },
+    ],
+    tokenUsage: { input: 2150, output: 847, limit: 4000 },
+    cost: 0.023,
+  },
+  {
+    id: "strategist",
+    name: "استراتژیست",
+    nameEn: "Strategist",
+    model: "Gemini Pro",
+    icon: "💡",
+    color: "text-purple-400",
+    bgColor: "bg-purple-500/10",
+    borderColor: "border-purple-500/30",
+    status: "thinking",
+    startTime: Date.now() - 2800,
+    elapsed: "۲.۸s",
+    confidence: 78,
+    thoughts: [
+      {
+        id: "1",
+        timestamp: Date.now() - 2800,
+        elapsed: "۰.۱s",
+        type: "received",
+        icon: "📥",
+        content: "پیام کاربر دریافت شد",
+      },
+      {
+        id: "2",
+        timestamp: Date.now() - 2600,
+        elapsed: "۰.۳s",
+        type: "memory_load",
+        icon: "🧠",
+        content: "بارگذاری زمینه استراتژیک...",
+      },
+      {
+        id: "3",
+        timestamp: Date.now() - 2000,
+        elapsed: "۱.۰s",
+        type: "thinking",
+        icon: "💭",
+        content: "تولید سناریوهای استراتژیک...",
+        details: ["سناریو ۱: ورود سریع به بازار", "سناریو ۲: همکاری با شریک محلی", "سناریو ۳: آزمایش کوچک‌مقیاس"],
+        expandable: true,
+        expanded: true,
+      },
+    ],
+    tokenUsage: { input: 1850, output: 620, limit: 4000 },
+    cost: 0.018,
+  },
+  {
+    id: "critic",
+    name: "منتقد",
+    nameEn: "Critic",
+    model: "Claude Opus",
+    icon: "⚠️",
+    color: "text-red-400",
+    bgColor: "bg-red-500/10",
+    borderColor: "border-red-500/30",
+    status: "thinking",
+    startTime: Date.now() - 2500,
+    elapsed: "۲.۵s",
+    confidence: 92,
+    thoughts: [
+      {
+        id: "1",
+        timestamp: Date.now() - 2500,
+        elapsed: "۰.۱s",
+        type: "received",
+        icon: "📥",
+        content: "پیام کاربر دریافت شد",
+      },
+      {
+        id: "2",
+        timestamp: Date.now() - 2000,
+        elapsed: "۰.۵s",
+        type: "thinking",
+        icon: "💭",
+        content: "تحلیل ریسک‌های پیشنهادات...",
+        details: ["⚠️ ریسک ارزی: نوسانات درهم", "⚠️ ریسک رقابتی: بازیگران بزرگ", "⚠️ ریسک عملیاتی: فاصله جغرافیایی"],
+        expandable: true,
+        expanded: true,
+      },
+    ],
+    tokenUsage: { input: 1650, output: 480, limit: 4000 },
+    cost: 0.015,
+  },
+]
+
+export const mockMemoryBlocks: MemoryBlock[] = [
+  {
+    id: "human",
+    type: "human",
+    title: "پروفایل کاربر",
+    icon: "👤",
+    content: {
+      نام: "علی رضایی",
+      شرکت: "تهران‌تک سولوشنز",
+      نقش: "مدیرعامل",
+      ایمیل: "ali@tehrantech.ir",
+      "تمرکز فعلی": ["ارزیابی توسعه دبی", "کاهش هزینه ۱۵٪", "استخدام ۳ مهندس"],
+      ترجیحات: ["لحن رسمی", "تقویم جلالی", "تصمیمات داده‌محور"],
+    },
+    lastUpdated: "۳ ثانیه پیش",
+    updatedBy: "Analyst (خودکار)",
+    size: 1.8,
+    maxSize: 2,
+    editable: true,
+    pendingEdit: {
+      field: "تمرکز فعلی",
+      oldValue: "ارزیابی توسعه دبی",
+      newValue: "در حال بررسی فعال توسعه دبی. علاقه‌مند به رشد استراتژیک.",
+      byAgent: "Analyst",
+    },
+  },
+  {
+    id: "persona",
+    type: "persona",
+    title: "شخصیت عامل",
+    icon: "🤖",
+    content: {
+      نقش: "مشاور هوشمند برای تهران‌تک",
+      سبک: "رسمی، استراتژیک، مستند",
+      ملاحظات: ["تأثیر مالی", "ارزیابی ریسک", "عملکرد گذشته"],
+    },
+    lastUpdated: "۲ روز پیش",
+    updatedBy: "کاربر",
+    size: 0.8,
+    maxSize: 2,
+    editable: true,
+  },
+  {
+    id: "company",
+    type: "company",
+    title: "زمینه شرکت",
+    icon: "🏢",
+    content: {
+      صنعت: "تجارت الکترونیک",
+      اندازه: "۱۵ کارمند",
+      تأسیس: "۱۳۹۸",
+      درآمد: "۲.۵ میلیارد تومان",
+      رشد: "۲۵٪ سالانه",
+    },
+    lastUpdated: "۱ هفته پیش",
+    updatedBy: "کاربر",
+    size: 0.6,
+    maxSize: 2,
+    editable: true,
+  },
+]
+
+export const mockWorkingMemory: WorkingMemory[] = [
+  {
+    id: "1",
+    timestamp: "now",
+    relativeTime: "الان",
+    type: "decision",
+    title: "سوال درباره دبی",
+    summary: "تصمیم استراتژیک در حال پردازش...",
+    relevance: 100,
+    isActive: true,
+    isExcluded: false,
+  },
+  {
+    id: "2",
+    timestamp: "2h",
+    relativeTime: "۲ ساعت پیش",
+    type: "email",
+    title: "قیمت‌گذاری رقیب",
+    summary: "تحلیل قیمت‌های رقبا در منطقه",
+    relevance: 75,
+    isActive: false,
+    isExcluded: false,
+  },
+  {
+    id: "3",
+    timestamp: "yesterday",
+    relativeTime: "دیروز",
+    type: "meeting",
+    title: "جلسه استراتژی Q1",
+    summary: "۳ آیتم اقدام تعیین شد",
+    relevance: 60,
+    isActive: false,
+    isExcluded: false,
+  },
+  {
+    id: "4",
+    timestamp: "6m",
+    relativeTime: "۶ ماه پیش",
+    type: "decision",
+    title: "تصمیم توسعه دبی",
+    summary: "۲ مشتری جدید (موفق ✓)",
+    relevance: 95,
+    isActive: true,
+    isExcluded: false,
+  },
+]
+
+export const mockArchivalResults: ArchivalResult[] = [
+  {
+    id: "1",
+    title: "تحقیق بازار: امارات",
+    date: "۳ هفته پیش",
+    score: 0.95,
+    preview: "تحلیل جامع بازار تجارت الکترونیک امارات...",
+    type: "research",
+  },
+  {
+    id: "2",
+    title: "گفتگو: رشد بین‌المللی",
+    date: "۲ ماه پیش",
+    score: 0.89,
+    preview: "بحث درباره استراتژی‌های توسعه...",
+    type: "chat",
+  },
+  {
+    id: "3",
+    title: "گزارش مالی Q3",
+    date: "۴ ماه پیش",
+    score: 0.76,
+    preview: "خلاصه عملکرد مالی سه‌ماهه...",
+    type: "report",
+  },
+]
+
+export const mockChats: Chat[] = [
+  {
+    id: "1",
+    title: "توسعه دبی",
+    preview: "آیا باید شعبه دبی باز کنیم؟",
+    date: "الان",
+    messageCount: 12,
+    isActive: true,
+  },
+  {
+    id: "2",
+    title: "بهینه‌سازی هزینه",
+    preview: "چگونه هزینه‌ها را ۱۵٪ کاهش دهیم؟",
+    date: "دیروز",
+    messageCount: 28,
+    isActive: false,
+  },
+  {
+    id: "3",
+    title: "استخدام مهندس",
+    preview: "استراتژی جذب استعداد",
+    date: "۳ روز پیش",
+    messageCount: 15,
+    isActive: false,
+  },
+]
+
+export const mockAgentPrompts: AgentPrompt[] = [
+  {
+    id: "analyst-prompt",
+    agentId: "analyst",
+    systemPrompt: `شما عامل تحلیلگر داده‌محور هستید.
+
+نقش شما:
+- تحلیل عینی داده‌ها
+- محاسبه ROI و معیارهای مالی
+- تحقیق شرایط بازار
+- ارجاع به همه منابع
+
+ابزارهای در دسترس:
+- web_search (برای تحقیق)
+- calculator (برای محاسبات)
+- memory_search (برای داده‌های گذشته)
+
+همیشه فکر کنید:
+۱. چه داده‌ای نیاز دارم؟
+۲. کجا می‌توانم پیدا کنم؟
+۳. چقدر مطمئن هستم؟`,
+    temperature: 0.7,
+    topP: 0.9,
+    maxTokens: 1500,
+    tools: [
+      { id: "web_search", name: "جستجوی وب", enabled: true },
+      { id: "calculator", name: "ماشین‌حساب", enabled: true },
+      { id: "memory_search", name: "جستجوی حافظه", enabled: true },
+      { id: "code_execution", name: "اجرای کد", enabled: false },
+      { id: "memory_edit", name: "ویرایش حافظه", enabled: true },
+    ],
+    memoryEditMode: "require_approval",
+  },
+]
+
+export const mockSettings: SystemSettings = {
+  transparencyLevel: "maximum",
+  autoSave: true,
+  createMemoriesFromDecisions: true,
+  updateCoreMemory: true,
+  saveInterval: 5,
+  requireMemoryApproval: true,
+  showInnerMonologue: true,
+  showToolDetails: true,
+  showTokenUsage: true,
+  allowMidProcessIntervention: true,
+  costLimitPerMessage: 0.5,
+}

@@ -1,0 +1,8 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "debate_system": "./src/agents/debate_system.py:graph",
+    "task_router": "./src/agents/router.py:graph"
+  },
+  "env": ".env"
+}

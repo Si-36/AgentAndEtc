@@ -1,0 +1,75 @@
+# AI-EOS Dependencies
+# Week 1-2: Foundation & Infrastructure
+
+# Database
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.23
+pgvector==0.2.4
+alembic==1.13.1
+
+# LLM APIs
+google-generativeai==0.3.2  # Gemini 2.0 Flash
+anthropic==0.25.0  # Claude Sonnet 4.5 / Opus 4.5
+openai==1.14.0  # For embeddings and Swarm
+
+# Orchestration & Multi-Agent (Latest versions - Dec 2025)
+langgraph>=0.2.50  # Multi-agent debates, state management
+langchain>=0.3.0  # LangChain core
+langchain-openai>=0.2.0  # OpenAI integration for LangChain
+langchain-core>=0.3.0  # LangChain core messages
+langgraph-cli>=0.1.0  # LangGraph CLI tools
+langgraph-sdk>=0.1.61  # LangGraph SDK
+langsmith>=0.2.0  # LangSmith observability (CRITICAL)
+# OpenAI Swarm (install from GitHub): pip install git+https://github.com/openai/swarm.git
+
+# Memory & Learning
+letta>=0.15.1  # 3-tier memory system (latest version)
+redis==5.0.1  # Caching
+
+# Persian Language
+persiantools==4.1.0  # Jalali calendar
+googletrans==4.0.0rc1  # Translation (backup)
+
+# Web Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# Voice & Communication
+twilio==8.12.0
+python-telegram-bot==20.7
+# WhatsApp Business API (use official Meta SDK)
+
+# Utilities
+python-dotenv==1.0.0
+python-dateutil==2.8.2
+pytz==2024.1
+aiohttp==3.9.3
+httpx==0.26.0
+tenacity==8.2.3  # Retry logic
+
+# Monitoring & Logging
+sentry-sdk==1.40.0
+structlog==24.1.0
+
+# Testing
+pytest==7.4.4
+pytest-asyncio==0.23.3
+pytest-cov==4.1.0
+httpx-mock==0.16.0
+
+# Development
+black==24.1.1
+ruff==0.1.15
+mypy==1.8.0
+
+# Data Science (for RL)
+numpy==1.26.3
+scipy==1.12.0
+scikit-learn==1.4.0
+pandas==2.2.0
+
+# Frontend (Next.js/React deps handled separately)
+# @copilotkit/react-core
+# @copilotkit/react-ui
